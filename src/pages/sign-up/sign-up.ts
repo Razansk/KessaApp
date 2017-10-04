@@ -1,49 +1,52 @@
-import { Component, ViewChild } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-import { TabsPage } from '../tabs/tabs';
-import { BoutiqueInfoPage } from '../boutique-info/boutique-info';
-
-
-
-/**
- * Generated class for the SignUpPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
-
+import { Component } from '@angular/core';
+import { NavController, LoadingController } from 'ionic-angular';
+import { Auth } from '../../providers/auth';
+import { HomePage } from '../home/home';
+ 
 @Component({
-  selector: 'page-sign-up',
-  templateUrl: 'sign-up.html',
+  selector: 'signup-page',
+  templateUrl: 'sign-up.html'
 })
 export class SignUpPage {
-    @ViewChild('name') name;
-    @ViewChild('email') email;
-    @ViewChild('phone')phone;
-    @ViewChild('password') password;
+ 
+  role: string;
+  email: string;
+  password: string;
+  loading: any;
 
  
-   constructor(public navCtrl: NavController, public navParams: NavParams) {
-   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SignUpPage');
-
+  constructor(public navCtrl: NavController, public authService: Auth, public loadingCtrl: LoadingController) {
+ 
   }
-
-
-
-
-  DSiginUp(){
-      this.navCtrl.push(BoutiqueInfoPage);
-
-
-    }
-
-
-    CSiginUp(){
-      this.navCtrl.push(TabsPage);
-
+ 
+  register(){
+ 
+    this.showLoader();
+ 
+    let details = {
+        email: this.email,
+        password: this.password,
+        role: this.role
+    };
+ 
+    this.authService.createAccount(details).then((result) => {
+      this.loading.dismiss();
+      console.log(result);
+      this.navCtrl.setRoot(HomePage);
+    }, (err) => {
+        this.loading.dismiss();
+    });
+ 
   }
-
+ 
+  showLoader(){
+ 
+    this.loading = this.loadingCtrl.create({
+      content: 'Authenticating...'
+    });
+ 
+    this.loading.present();
+ 
+  }
+ 
 }

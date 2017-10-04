@@ -2,6 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { HttpModule } from '@angular/http';
 
 
 import { NewArrivalsPage } from '../pages/new-arrivals/new-arrivals';
@@ -22,7 +23,7 @@ import { DOrdersPage } from '../pages/d-orders/d-orders';
 import { NewItemPage } from '../pages/new-item/new-item';
 
 
-
+import { IonicStorageModule } from '@ionic/storage' 
 import { Storage } from '@ionic/storage';
 import { Auth } from '../providers/auth';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -61,7 +62,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-
+    IonicStorageModule.forRoot(),
+    HttpModule
   ],
 
 
@@ -90,7 +92,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 
   providers: [
-    Storage,
     Auth,
     StatusBar,
     SplashScreen,
