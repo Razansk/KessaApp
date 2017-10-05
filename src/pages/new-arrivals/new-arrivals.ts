@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {Products} from '../../providers/products';
+import { NavController, ModalController, AlertController, LoadingController } from 'ionic-angular';
+import { Auth } from '../../providers/auth';
+import { LoginPage } from '../login/login'
 
 @Component({
   selector: 'page-new-arrivals',
@@ -7,8 +10,22 @@ import { NavController } from 'ionic-angular';
 })
 export class NewArrivalsPage {
 
-  constructor(public navCtrl: NavController) {
-
+  products: any;
+  loading: any;
+ 
+  constructor(public navCtrl: NavController, public productsService: Products, public modalCtrl: ModalController,
+    public alertCtrl: AlertController, public authService: Auth, public loadingCtrl: LoadingController) {
+ 
+  }
+ 
+  ionViewDidLoad(){
+ 
+    this.productsService.getProducts().then((data) => {
+          this.products = data;
+    }, (err) => {
+        console.log("not allowed");
+    });
+ 
   }
 
 }
