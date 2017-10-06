@@ -2,18 +2,18 @@
 page-boutique-info {
 
     
-    
-    
     ion-header{
         //back button
         button{
             color: map-get($colors , danger);
         }
+        .toolbar-background {
+             background-color: map-get($colors , lighter);
+        }
     }
 
 
     ion-content{
-
         ion-item{
             padding: 0px;
         }
