@@ -1,4 +1,4 @@
-.ios, md, wp{
+.ios, .md, .wp{
     page-login {
         ion-content{
             background-color:map-get($colors , lighter );
@@ -16,7 +16,7 @@
 
 
         ion-list{
-        padding: 50px 25px;
+            padding: 50px 25px;
         }
 
     }

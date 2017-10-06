@@ -9,9 +9,22 @@
 
 
 <ion-content padding>
+  <ion-list>
 
+      <ion-item>
+          <ion-label>Kessa Name</ion-label>
+          <ion-input floating type="email" placeholder="******@*****.com" #email ></ion-input>
+      </ion-item>
 
- 
-    
+      <ion-item >
+          <ion-label>Password:</ion-label>
+          <ion-input floating type="password" placeholder="Password" #password></ion-input>
+      </ion-item >
+  </ion-list>
+  
+  <br />
+  <div>
+      <button ion-button full color="secondary" (click)="login()"> Login</button>
+  </div>
 
 </ion-content>

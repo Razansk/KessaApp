@@ -32953,22 +32953,22 @@ ion-navbar.toolbar {
   font-weight: 900;
 }
 
-.ios page-login ion-content, md page-login ion-content, wp page-login ion-content {
+.ios page-login ion-content, .md page-login ion-content, .wp page-login ion-content {
   background-color: #f3f1f1;
 }
 
-.ios page-login ion-content button, md page-login ion-content button, wp page-login ion-content button {
+.ios page-login ion-content button, .md page-login ion-content button, .wp page-login ion-content button {
   padding: 0px;
   color: #5d7389;
   font-weight: 900;
 }
 
-.ios page-login ion-item, md page-login ion-item, wp page-login ion-item {
+.ios page-login ion-item, .md page-login ion-item, .wp page-login ion-item {
   background-color: #f3f1f1;
   padding: 0px;
 }
 
-.ios page-login ion-list, md page-login ion-list, wp page-login ion-list {
+.ios page-login ion-list, .md page-login ion-list, .wp page-login ion-list {
   padding: 50px 25px;
 }
 
@@ -33011,7 +33011,7 @@ ion-navbar.toolbar {
   padding: 40px 25px 30px 25px;
 }
 
-.ios page-sign-up p, .md page-sign-up p, .wp page-sign-up p {
+.ios page-sign-up div p, .md page-sign-up div p, .wp page-sign-up div p {
   color: #e18484;
   text-align: center;
   font-size: 18px;
