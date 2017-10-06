@@ -21,4 +21,12 @@ export class NewItemPage {
     console.log('ionViewDidLoad NewItemPage');
   }
 
+  addProduct(){
+    console.log('added');
+  }
+
+  uplodFile(){
+    
+  }
+
 }
