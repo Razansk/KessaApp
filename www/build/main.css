@@ -32972,22 +32972,198 @@ ion-navbar.toolbar {
   padding: 50px 25px;
 }
 
-.ios page-profile ion-item, md page-profile ion-item, wp page-profile ion-item {
+.ios page-new-arrivals ion-card-content, .md page-new-arrivals ion-card-content, .wp page-new-arrivals ion-card-content {
   padding: 0px;
 }
 
-.ios page-profile ion-list, md page-profile ion-list, wp page-profile ion-list {
+.ios page-new-arrivals .price-list button, .md page-new-arrivals .price-list button, .wp page-new-arrivals .price-list button {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ios page-new-arrivals ion-card, .md page-new-arrivals ion-card, .wp page-new-arrivals ion-card {
+  margin: 0px;
+  width: 100%;
+}
+
+.ios page-new-arrivals .price-list, .md page-new-arrivals .price-list, .wp page-new-arrivals .price-list {
+  padding-left: 10px;
+}
+
+.ios page-new-arrivals .price-list h3, .md page-new-arrivals .price-list h3, .wp page-new-arrivals .price-list h3 {
+  margin-top: 0px;
+}
+
+.ios page-new-arrivals .price-list ion-label, .md page-new-arrivals .price-list ion-label, .wp page-new-arrivals .price-list ion-label {
+  margin: 0 0 0 16px;
+  white-space: inherit;
+}
+
+.ios page-new-arrivals .price-list button, .md page-new-arrivals .price-list button, .wp page-new-arrivals .price-list button {
+  margin: 0px 0px 9px 0px;
+}
+
+.ios page-new-arrivals .row.unlimited-items .col, .md page-new-arrivals .row.unlimited-items .col, .wp page-new-arrivals .row.unlimited-items .col {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  width: 33.3%;
+}
+
+.ios page-new-arrivals .grid ion-row, .md page-new-arrivals .grid ion-row, .wp page-new-arrivals .grid ion-row {
+  margin: 0;
+  padding: 0 0 5px 5px;
+}
+
+.ios page-new-arrivals .grid ion-col, .md page-new-arrivals .grid ion-col, .wp page-new-arrivals .grid ion-col {
+  margin: 0;
+  padding: 5px 5px 0 0;
+}
+
+.ios page-new-arrivals .grid a[light], .md page-new-arrivals .grid a[light], .wp page-new-arrivals .grid a[light] {
+  width: 100%;
+  height: 100px;
+}
+
+.ios page-new-arrivals .prod .row.unlimited-items, .md page-new-arrivals .prod .row.unlimited-items, .wp page-new-arrivals .prod .row.unlimited-items {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 5px;
+}
+
+.ios page-new-arrivals .prod .row.unlimited-items .col, .md page-new-arrivals .prod .row.unlimited-items .col, .wp page-new-arrivals .prod .row.unlimited-items .col {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  width: 50%;
+  padding: 5px 5px 0 0;
+}
+
+.ios page-new-arrivals .badge, .md page-new-arrivals .badge, .wp page-new-arrivals .badge {
+  position: absolute;
+  top: -8%;
+  right: 4%;
+  right: calc(10% - 5px);
+  padding: 1px 6px;
+  height: auto;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.ios page-new-arrivals .card-background-page ion-card, .md page-new-arrivals .card-background-page ion-card, .wp page-new-arrivals .card-background-page ion-card {
+  position: relative;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+.ios page-new-arrivals ion-icon[item-left] + .item-inner, .md page-new-arrivals ion-icon[item-left] + .item-inner, .wp page-new-arrivals ion-icon[item-left] + .item-inner {
+  margin-left: 0px;
+}
+
+.ios page-new-arrivals .item-md [item-left], .ios page-new-arrivals .item-md [item-right], .md page-new-arrivals .item-md [item-left], .md page-new-arrivals .item-md [item-right], .wp page-new-arrivals .item-md [item-left], .wp page-new-arrivals .item-md [item-right] {
+  margin: 9px 0px 9px 0;
+}
+
+.ios page-new-arrivals .item, .md page-new-arrivals .item, .wp page-new-arrivals .item {
+  padding-left: 0;
+}
+
+.ios page-new-arrivals .label-ios, .ios page-new-arrivals .label-md, .ios page-new-arrivals .label-wp, .md page-new-arrivals .label-ios, .md page-new-arrivals .label-md, .md page-new-arrivals .label-wp, .wp page-new-arrivals .label-ios, .wp page-new-arrivals .label-md, .wp page-new-arrivals .label-wp {
+  margin: 12px 8px 13px 16px;
+}
+
+.ios page-new-arrivals .item.item-block .item-inner, .md page-new-arrivals .item.item-block .item-inner, .wp page-new-arrivals .item.item-block .item-inner {
+  padding-right: 8px;
+  border-bottom: 0.55px solid #eeecf3;
+}
+
+.ios page-new-arrivals .list-ios > .item-block:first-child, .md page-new-arrivals .list-ios > .item-block:first-child, .wp page-new-arrivals .list-ios > .item-block:first-child {
+  border-top: none;
+}
+
+.ios page-new-arrivals .item ion-thumbnail, .md page-new-arrivals .item ion-thumbnail, .wp page-new-arrivals .item ion-thumbnail {
+  min-width: 5.6rem;
+  min-height: 5.6rem;
+  width: 10rem;
+  height: 10rem;
+  margin: 0;
+}
+
+.ios page-new-arrivals .item ion-thumbnail img, .md page-new-arrivals .item ion-thumbnail img, .wp page-new-arrivals .item ion-thumbnail img {
+  max-width: 10rem;
+  max-height: 10rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+.ios page-new-arrivals .item ion-thumbnail[item-left], .md page-new-arrivals .item ion-thumbnail[item-left], .wp page-new-arrivals .item ion-thumbnail[item-left] {
+  margin: 0;
+}
+
+.ios page-new-arrivals .bottom-left, .md page-new-arrivals .bottom-left, .wp page-new-arrivals .bottom-left {
+  position: absolute;
+  bottom: 12px;
+  left: inherit;
+}
+
+.ios page-new-arrivals .top, .md page-new-arrivals .top, .wp page-new-arrivals .top {
+  position: absolute;
+  top: 0;
+}
+
+.ios page-new-arrivals .bottom-right, .md page-new-arrivals .bottom-right, .wp page-new-arrivals .bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+}
+
+.ios page-new-arrivals .item-ios p, .md page-new-arrivals .item-ios p, .wp page-new-arrivals .item-ios p {
+  margin: 0 0 2px;
+  font-size: 13px;
+  color: #8e9093;
+}
+
+.ios page-new-arrivals .item-ios [item-right], .md page-new-arrivals .item-ios [item-right], .wp page-new-arrivals .item-ios [item-right] {
+  margin: 8px 0;
+}
+
+.ios page-new-arrivals .item-wp .item-button, .md page-new-arrivals .item-wp .item-button, .wp page-new-arrivals .item-wp .item-button {
+  padding: 3px;
+  margin: 0;
+  height: 25px;
+  font-size: 1.2rem;
+}
+
+.ios page-new-arrivals .item-ios h2, .md page-new-arrivals .item-ios h2, .wp page-new-arrivals .item-ios h2 {
+  margin: 0 0 2px;
+  font-size: 1.7rem;
+  font-weight: normal;
+  width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ios page-profile ion-item, .md page-profile ion-item, .wp page-profile ion-item {
+  padding: 0px;
+}
+
+.ios page-profile ion-list, .md page-profile ion-list, .wp page-profile ion-list {
   padding: 40px 25px 30px 25px;
 }
 
-.ios page-profile button, md page-profile button, wp page-profile button {
+.ios page-profile button, .md page-profile button, .wp page-profile button {
   padding: 0px;
   color: #5d7389;
   font-weight: 900;
   margin-bottom: 20px;
 }
 
-.ios page-profile #item, md page-profile #item, wp page-profile #item {
+.ios page-profile #item, .md page-profile #item, .wp page-profile #item {
   color: #5d7389;
   font-weight: 900;
 }
