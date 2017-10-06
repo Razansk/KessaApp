@@ -28,4 +28,12 @@ export class NewArrivalsPage {
  
   }
 
+  getProductDetails(){
+
+  }
+
+  addToCart(){
+
+  }
+
 }
