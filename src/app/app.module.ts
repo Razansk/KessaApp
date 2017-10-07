@@ -53,9 +53,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CollectionPage,
     DOrdersPage,
     NewItemPage,
-    
-
-
   ],
 
 
@@ -95,8 +92,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Auth,
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Auth
+    { provide: ErrorHandler, 
+      useClass: IonicErrorHandler },
+    Auth 
+    //Razan, Auth is writtem here twice
   ]
 })
 export class AppModule {}

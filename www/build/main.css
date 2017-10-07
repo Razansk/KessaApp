@@ -32877,12 +32877,12 @@ ion-navbar.toolbar {
   background: #ebe0e0;
 }
 
-.ios .dtoolbar, .md .dtoolbar, .wp .dtoolbar {
-  background: #f3f1f1;
-}
-
 .ios page-boutique-info ion-header button, .md page-boutique-info ion-header button, .wp page-boutique-info ion-header button {
   color: #a3bac2;
+}
+
+.ios page-boutique-info ion-header .toolbar-background, .md page-boutique-info ion-header .toolbar-background, .wp page-boutique-info ion-header .toolbar-background {
+  background-color: #f3f1f1;
 }
 
 .ios page-boutique-info ion-content ion-item, .md page-boutique-info ion-content ion-item, .wp page-boutique-info ion-content ion-item {
@@ -32936,6 +32936,14 @@ ion-navbar.toolbar {
   width: 100%;
   height: 100%;
   opacity: 0.6;
+}
+
+.ios page-collection .toolbar-background, .md page-collection .toolbar-background, .wp page-collection .toolbar-background {
+  background-color: #f3f1f1;
+}
+
+.ios page-d-orders .toolbar-background, .md page-d-orders .toolbar-background, .wp page-d-orders .toolbar-background {
+  background-color: #f3f1f1;
 }
 
 .ios page-home ion-content, .md page-home ion-content, .wp page-home ion-content {
@@ -33148,22 +33156,26 @@ ion-navbar.toolbar {
   white-space: nowrap;
 }
 
-.ios page-profile ion-item, .md page-profile ion-item, .wp page-profile ion-item {
+.ios page-new-item .toolbar-background, .md page-new-item .toolbar-background, .wp page-new-item .toolbar-background {
+  background-color: #f3f1f1;
+}
+
+.ios page-profile ion-item, md page-profile ion-item, wp page-profile ion-item {
   padding: 0px;
 }
 
-.ios page-profile ion-list, .md page-profile ion-list, .wp page-profile ion-list {
+.ios page-profile ion-list, md page-profile ion-list, wp page-profile ion-list {
   padding: 40px 25px 30px 25px;
 }
 
-.ios page-profile button, .md page-profile button, .wp page-profile button {
+.ios page-profile button, md page-profile button, wp page-profile button {
   padding: 0px;
   color: #5d7389;
   font-weight: 900;
   margin-bottom: 20px;
 }
 
-.ios page-profile #item, .md page-profile #item, .wp page-profile #item {
+.ios page-profile #item, md page-profile #item, wp page-profile #item {
   color: #5d7389;
   font-weight: 900;
 }
